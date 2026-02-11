@@ -54,6 +54,11 @@ pipeline {
                     curl -H "Authorization: Bearer %TOKEN%" ^
                     -F "file=@results\\output.xml" ^
                     "%XRAY_URL%/api/v1/import/execution/robot?projectKey=POEI2&testPlanKey=POEI2-1072"
+		"""
+		bat """
+		    dir results 
+		    type results\\output.xml
+
                 """
                 }
             }
