@@ -51,9 +51,10 @@ pipeline {
                 {
                 bat """
                     set /p TOKEN=<token.txt
-                    curl -H "Authorization: Bearer %TOKEN%" ^
-                    -F "file=@results\\output.xml" ^
-                    "%XRAY_URL%/api/v1/import/execution/robot?projectKey=POEI2&testPlanKey=POEI2-1072"
+                    curl -H "Content-Type: text/xml" ^
+                         -H "Authorization: Bearer %TOKEN%" ^
+                         --data-binary @"C:/dev/jenkins/workspace/ImportResultXrayFromRobot/output.xml" ^
+                         https://xray.cloud.getxray.app/api/v1/import/execution/robot?projectKey=POEI2&testPlanKey=POEI2-1072
 		"""
 		bat """
 		    dir results 
