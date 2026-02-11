@@ -11,7 +11,7 @@ Test Teardown    Close Application
 
 *** Test Cases ***
 Finalisation de commande avec succès
-     [Tags]    POEI2-1051    
+     [Tags]    POEI2-1072    
     Login avec identifiants   ${VALID_USERNAME}    ${VALID_PASSWORD}
     Add Product To Cart
     Go To Cart
@@ -24,4 +24,5 @@ Finalisation de commande avec succès
     #Page Should Contain   Checkout: Overview
     Finish Checkout
     Page Should Contain    Products
+    
     

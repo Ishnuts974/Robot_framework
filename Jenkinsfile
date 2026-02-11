@@ -5,6 +5,10 @@ pipeline {
         python 'Python3'
     }
 
+    environment {
+        ROBOT_FILE = 'tests\\checkout_test.robot'
+    }
+
     stages {
 
         stage('Checkout Code') {
@@ -15,13 +19,19 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'pip install -r requirements.txt'
+                bat 'pip install -r requirements.txt'
             }
         }
 
-        stage('Run Robot Tests') {
+        stage('Run Checkout Test') {
             steps {
-                sh 'robot --output output.xml --report report.html --log log.html tests/'
+                bat """
+                robot ^
+                --output output.xml ^
+                --report report.html ^
+                --log log.html ^
+                %ROBOT_FILE%
+                """
             }
         }
 
@@ -40,9 +50,8 @@ pipeline {
                 keepAll: true,
                 reportDir: '.',
                 reportFiles: 'report.html',
-                reportName: 'Robot Report'
+                reportName: 'Robot Checkout Report'
             ])
         }
     }
 }
-

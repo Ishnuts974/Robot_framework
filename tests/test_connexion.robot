@@ -17,4 +17,4 @@ Test Connexion valide
 Test Connexion invalide
     Login avec identifiants    ${VALID_USERNAME}    ${WRONG_PASSWORD}
     Page Should Contain Element    //div[@class='error-message-container error']
-
+    

@@ -1,164 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-11T09:38:40.535435" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-11T10:26:30.245158" rpa="false" schemaversion="5">
 <suite id="s1" name="Mini Projet" source="C:\dev\robot_framework\mini_projet">
 <suite id="s1-s1" name="Tests" source="C:\dev\robot_framework\mini_projet\tests">
 <suite id="s1-s1-s1" name="Checkout Test" source="C:\dev\robot_framework\mini_projet\tests\checkout_test.robot">
 <test id="s1-s1-s1-t1" name="Finalisation de commande avec succès" line="13">
 <kw name="Open Application" owner="resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:40.924604" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2026-02-11T10:26:30.477412" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=add_argument("--incognito")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-11T09:38:40.924228" elapsed="1.506866"/>
+<status status="PASS" start="2026-02-11T10:26:30.477085" elapsed="1.097687"/>
 </kw>
-<status status="PASS" start="2026-02-11T09:38:40.923268" elapsed="1.508016"/>
+<status status="PASS" start="2026-02-11T10:26:30.476388" elapsed="1.098709"/>
 </kw>
 <kw name="Login avec identifiants" owner="login_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:42.433466" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2026-02-11T10:26:31.577623" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
 <arg>${USERNAME_INPUT}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-11T09:38:42.432191" elapsed="0.078991"/>
+<status status="PASS" start="2026-02-11T10:26:31.576260" elapsed="0.109677"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:42.511858" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<msg time="2026-02-11T10:26:31.686723" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
 <arg>${PASSWORD_INPUT}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-11T09:38:42.511450" elapsed="0.061987"/>
+<status status="PASS" start="2026-02-11T10:26:31.686240" elapsed="0.075266"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:42.574013" level="INFO">Clicking button 'id:login-button'.</msg>
+<msg time="2026-02-11T10:26:31.762384" level="INFO">Clicking button 'id:login-button'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-11T09:38:42.573639" elapsed="0.072314"/>
+<status status="PASS" start="2026-02-11T10:26:31.761838" elapsed="0.081944"/>
 </kw>
 <arg>${VALID_USERNAME}</arg>
 <arg>${VALID_PASSWORD}</arg>
-<status status="PASS" start="2026-02-11T09:38:42.431766" elapsed="0.214390"/>
+<status status="PASS" start="2026-02-11T10:26:31.575691" elapsed="0.268252"/>
 </kw>
 <kw name="Add Product To Cart" owner="product_page">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:42.647151" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<msg time="2026-02-11T10:26:31.845303" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
 <arg>${ADD_TO_CART_BTN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-11T09:38:42.646906" elapsed="0.058894"/>
+<status status="PASS" start="2026-02-11T10:26:31.845054" elapsed="0.053688"/>
 </kw>
-<status status="PASS" start="2026-02-11T09:38:42.646557" elapsed="0.059440"/>
+<status status="PASS" start="2026-02-11T10:26:31.844534" elapsed="0.054360"/>
 </kw>
 <kw name="Go To Cart" owner="product_page">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:42.706967" level="INFO">Clicking element 'class:shopping_cart_link'.</msg>
+<msg time="2026-02-11T10:26:31.899830" level="INFO">Clicking element 'class:shopping_cart_link'.</msg>
 <arg>${CART_ICON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-11T09:38:42.706726" elapsed="0.046026"/>
+<status status="PASS" start="2026-02-11T10:26:31.899588" elapsed="0.038957"/>
 </kw>
-<status status="PASS" start="2026-02-11T09:38:42.706402" elapsed="0.046664"/>
+<status status="PASS" start="2026-02-11T10:26:31.899226" elapsed="0.039469"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:42.764340" level="INFO">Current page contains text 'Sauce Labs Backpack'.</msg>
+<msg time="2026-02-11T10:26:31.951290" level="INFO">Current page contains text 'Sauce Labs Backpack'.</msg>
 <arg>Sauce Labs Backpack</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-02-11T09:38:42.753443" elapsed="0.011148"/>
+<status status="PASS" start="2026-02-11T10:26:31.939030" elapsed="0.012461"/>
 </kw>
 <kw name="Go To Checkout" owner="panier_page">
 <kw name="Page Should Contain Button" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:42.789912" level="INFO">Current page contains button 'id:checkout'.</msg>
+<msg time="2026-02-11T10:26:31.968736" level="INFO">Current page contains button 'id:checkout'.</msg>
 <arg>${CHECKOUT_BTN}</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<status status="PASS" start="2026-02-11T09:38:42.765553" elapsed="0.024592"/>
+<status status="PASS" start="2026-02-11T10:26:31.952209" elapsed="0.016792"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:42.790848" level="INFO">Clicking button 'id:checkout'.</msg>
+<msg time="2026-02-11T10:26:31.969492" level="INFO">Clicking button 'id:checkout'.</msg>
 <arg>${CHECKOUT_BTN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-11T09:38:42.790363" elapsed="0.049080"/>
+<status status="PASS" start="2026-02-11T10:26:31.969172" elapsed="0.043601"/>
 </kw>
-<status status="PASS" start="2026-02-11T09:38:42.765050" elapsed="0.074542"/>
+<status status="PASS" start="2026-02-11T10:26:31.951840" elapsed="0.061081"/>
 </kw>
 <kw name="Fill Checkout Form" owner="checkout_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:42.840613" level="INFO">Typing text 'Tony' into text field 'id:first-name'.</msg>
+<msg time="2026-02-11T10:26:32.013977" level="INFO">Typing text 'Tony' into text field 'id:first-name'.</msg>
 <arg>${CHECKOUT_FIRSTNAME_INPUT}</arg>
 <arg>${firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-11T09:38:42.840351" elapsed="0.058724"/>
+<status status="PASS" start="2026-02-11T10:26:32.013720" elapsed="0.112298"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:42.899655" level="INFO">Typing text 'Abemonty' into text field 'id:last-name'.</msg>
+<msg time="2026-02-11T10:26:32.126664" level="INFO">Typing text 'Abemonty' into text field 'id:last-name'.</msg>
 <arg>${CHECKOUT_LAST_NAME_INPUT}</arg>
 <arg>${lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-11T09:38:42.899298" elapsed="0.059268"/>
+<status status="PASS" start="2026-02-11T10:26:32.126255" elapsed="0.061986"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:42.959396" level="INFO">Typing text '75000' into text field 'id:postal-code'.</msg>
+<msg time="2026-02-11T10:26:32.188804" level="INFO">Typing text '75000' into text field 'id:postal-code'.</msg>
 <arg>${CHECKOUT_ZIP_CODE_INPUT}</arg>
 <arg>${zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-11T09:38:42.958815" elapsed="0.052468"/>
+<status status="PASS" start="2026-02-11T10:26:32.188437" elapsed="0.045834"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:43.011831" level="INFO">Clicking button 'id:continue'.</msg>
+<msg time="2026-02-11T10:26:32.234804" level="INFO">Clicking button 'id:continue'.</msg>
 <arg>${CONTINUE}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-11T09:38:43.011489" elapsed="0.047653"/>
+<status status="PASS" start="2026-02-11T10:26:32.234468" elapsed="0.048939"/>
 </kw>
 <arg>${FIRST_NAME_FILL}</arg>
 <arg>${LAST_NAME_FILL}</arg>
 <arg>${ZIP_CODE_FILL}</arg>
-<status status="PASS" start="2026-02-11T09:38:42.839910" elapsed="0.219390"/>
+<status status="PASS" start="2026-02-11T10:26:32.013272" elapsed="0.270285"/>
 </kw>
 <kw name="Finish Checkout" owner="checkout_page">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:43.060178" level="INFO">Clicking button 'id:finish'.</msg>
+<msg time="2026-02-11T10:26:32.284466" level="INFO">Clicking button 'id:finish'.</msg>
 <arg>${FINISH}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-11T09:38:43.059924" elapsed="0.050839"/>
+<status status="PASS" start="2026-02-11T10:26:32.284229" elapsed="0.057528"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:43.118890" level="INFO">Current page contains element 'class:complete-header'.</msg>
+<msg time="2026-02-11T10:26:32.349016" level="INFO">Current page contains element 'class:complete-header'.</msg>
 <arg>${CONFIRM_MSG}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2026-02-11T09:38:43.111054" elapsed="0.008095"/>
+<status status="PASS" start="2026-02-11T10:26:32.342161" elapsed="0.007118"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:43.119856" level="INFO">Clicking button 'id:back-to-products'.</msg>
+<msg time="2026-02-11T10:26:32.350139" level="INFO">Clicking button 'id:back-to-products'.</msg>
 <arg>${BACK_TO_PRODUCTS}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-11T09:38:43.119376" elapsed="0.050222"/>
+<status status="PASS" start="2026-02-11T10:26:32.349536" elapsed="0.072798"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Products</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-02-11T09:38:43.169815" elapsed="0.006763"/>
+<status status="PASS" start="2026-02-11T10:26:32.422727" elapsed="0.009550"/>
 </kw>
-<status status="PASS" start="2026-02-11T09:38:43.059574" elapsed="0.117151"/>
+<status status="PASS" start="2026-02-11T10:26:32.283866" elapsed="0.148550"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-02-11T09:38:43.182998" level="INFO">Current page contains text 'Products'.</msg>
+<msg time="2026-02-11T10:26:32.438131" level="INFO">Current page contains text 'Products'.</msg>
 <arg>Products</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-02-11T09:38:43.176982" elapsed="0.006295"/>
+<status status="PASS" start="2026-02-11T10:26:32.432760" elapsed="0.005533"/>
 </kw>
 <kw name="Close Application" owner="resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-11T09:38:43.184610" elapsed="2.097208"/>
+<status status="PASS" start="2026-02-11T10:26:32.439604" elapsed="2.099436"/>
 </kw>
-<status status="PASS" start="2026-02-11T09:38:43.184081" elapsed="2.097965"/>
+<status status="PASS" start="2026-02-11T10:26:32.438984" elapsed="2.100310"/>
 </kw>
 <tag>POEI2-1051</tag>
-<status status="PASS" start="2026-02-11T09:38:40.920365" elapsed="4.361881"/>
+<status status="PASS" start="2026-02-11T10:26:30.473245" elapsed="4.066398"/>
 </test>
-<status status="PASS" start="2026-02-11T09:38:40.577839" elapsed="4.711011"/>
+<status status="PASS" start="2026-02-11T10:26:30.280427" elapsed="4.264125"/>
 </suite>
-<status status="PASS" start="2026-02-11T09:38:40.575071" elapsed="4.718555"/>
+<status status="PASS" start="2026-02-11T10:26:30.277233" elapsed="4.270924"/>
 </suite>
-<status status="PASS" start="2026-02-11T09:38:40.540677" elapsed="4.757511"/>
+<status status="PASS" start="2026-02-11T10:26:30.248541" elapsed="4.302609"/>
 </suite>
 <statistics>
 <total>
@@ -174,9 +174,9 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2026-02-11T09:38:40.855627" level="WARN">Error in file 'C:\dev\robot_framework\mini_projet\pages\product_page.robot' on line 2: Suite 'Mini Projet.Tests.Checkout Test' has already imported library 'SeleniumLibrary' with different arguments. This import is ignored.</msg>
-<msg time="2026-02-11T09:38:40.870931" level="WARN">Error in file 'C:\dev\robot_framework\mini_projet\pages\panier_page.robot' on line 2: Suite 'Mini Projet.Tests.Checkout Test' has already imported library 'SeleniumLibrary' with different arguments. This import is ignored.</msg>
-<msg time="2026-02-11T09:38:40.892725" level="WARN">Error in file 'C:\dev\robot_framework\mini_projet\pages\login_page.robot' on line 2: Suite 'Mini Projet.Tests.Checkout Test' has already imported library 'SeleniumLibrary' with different arguments. This import is ignored.</msg>
-<msg time="2026-02-11T09:38:40.912750" level="WARN">Error in file 'C:\dev\robot_framework\mini_projet\pages\checkout_page.robot' on line 2: Suite 'Mini Projet.Tests.Checkout Test' has already imported library 'SeleniumLibrary' with different arguments. This import is ignored.</msg>
+<msg time="2026-02-11T10:26:30.456247" level="WARN">Error in file 'C:\dev\robot_framework\mini_projet\pages\product_page.robot' on line 2: Suite 'Mini Projet.Tests.Checkout Test' has already imported library 'SeleniumLibrary' with different arguments. This import is ignored.</msg>
+<msg time="2026-02-11T10:26:30.461223" level="WARN">Error in file 'C:\dev\robot_framework\mini_projet\pages\panier_page.robot' on line 2: Suite 'Mini Projet.Tests.Checkout Test' has already imported library 'SeleniumLibrary' with different arguments. This import is ignored.</msg>
+<msg time="2026-02-11T10:26:30.464889" level="WARN">Error in file 'C:\dev\robot_framework\mini_projet\pages\login_page.robot' on line 2: Suite 'Mini Projet.Tests.Checkout Test' has already imported library 'SeleniumLibrary' with different arguments. This import is ignored.</msg>
+<msg time="2026-02-11T10:26:30.468697" level="WARN">Error in file 'C:\dev\robot_framework\mini_projet\pages\checkout_page.robot' on line 2: Suite 'Mini Projet.Tests.Checkout Test' has already imported library 'SeleniumLibrary' with different arguments. This import is ignored.</msg>
 </errors>
 </robot>
