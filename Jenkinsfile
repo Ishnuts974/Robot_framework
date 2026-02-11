@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                bat 'checkout scm'
+                //bat 'checkout scm'
                 echo 'Projet checkout completed.'
             }
         }
