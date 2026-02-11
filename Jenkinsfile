@@ -11,6 +11,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 bat 'checkout scm'
+                echo 'Projet checkout completed.'
             }
         }
 
